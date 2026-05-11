@@ -1,0 +1,26 @@
+{
+    "name": "linkrobins/post-num",
+    "description": "Adds a #N number to each post in a discussion. Ported to Flarum 2.0 from ziven/flarum-post-number.",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "flarum/core": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LinkRobins\\PostNum\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Link Robins Post Numbers",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-list-ol",
+                "color": "#07adcc",
+                "backgroundColor": "#1a2535"
+            }
+        }
+    }
+}
