@@ -13,11 +13,6 @@
         "php": "^8.3",
         "flarum/core": "^2.0"
     },
-    "autoload": {
-        "psr-4": {
-            "LinkRobins\\PostNum\\": "src/"
-        }
-    },
     "extra": {
         "flarum-extension": {
             "title": "Link Robins Post Numbers",
