@@ -11,7 +11,7 @@ Extends `CommentPost.headerItems` to append a small `#N` label to each post's he
 ## Requirements
 
 - Flarum **2.0** or later
-- PHP **8.2** or later
+- PHP **8.3** or later
 
 ## Installation
 
