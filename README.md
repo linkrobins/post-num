@@ -8,6 +8,33 @@ Ported to Flarum 2.0 from [`ziven/flarum-post-number`](https://github.com/Ziiven
 
 Extends `CommentPost.headerItems` to append a small `#N` label to each post's header, where N is the post's sequence number within its discussion. Hidden posts are skipped, matching the original extension's behavior.
 
+
+## What it counts
+
+The number comes from Flarum's own per-discussion post number, not a count the extension keeps. That has two consequences worth knowing:
+
+- **Numbers are stable.** A post keeps its number for the life of the discussion, so `#42` in a quoted link still points at the same post later.
+- **Numbers can have gaps.** Deleting a post does not renumber the ones after it. A discussion that has had posts removed will skip numbers, which is correct — renumbering would break every existing deep link.
+
+Hidden posts are skipped entirely: if a post is hidden, no number is rendered for it rather than a number for something you cannot read.
+
+## What it does NOT do
+
+- No settings and no migrations.
+- It does not renumber, or offer a "count only visible posts" mode — see the gap behaviour above.
+- It does not add its own permalink or anchor. Flarum's post menu already has "Permalink", and the number sits next to it rather than duplicating it.
+
+## Styling
+
+The number renders as a `<span class="LinkRobinsPostNum">` in the post header, alongside the timestamp. Restyle it from your theme's custom LESS:
+
+```less
+.LinkRobinsPostNum {
+  opacity: .5;
+  font-variant-numeric: tabular-nums;
+}
+```
+
 ## Requirements
 
 - Flarum **2.0** or later
