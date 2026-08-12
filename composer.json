@@ -2,12 +2,21 @@
     "name": "linkrobins/post-num",
     "description": "Adds a #N number to each post in a discussion. Ported to Flarum 2.0 from ziven/flarum-post-number.",
     "type": "flarum-extension",
-    "keywords": ["flarum", "posts", "numbering", "discussions"],
+    "keywords": [
+        "flarum",
+        "posts",
+        "numbering",
+        "discussions"
+    ],
+    "support": {
+        "issues": "https://github.com/linkrobins/post-num/issues",
+        "source": "https://github.com/linkrobins/post-num"
+    },
     "homepage": "https://linkrobins.com/extensions/post-num",
     "license": "MIT",
     "authors": [
         {
-            "name": "Karl Bullock",
+            "name": "Link Robins",
             "email": "karl@linkrobins.com"
         }
     ],
