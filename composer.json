@@ -26,7 +26,7 @@
     },
     "extra": {
         "flarum-extension": {
-            "title": "Link Robins Post Numbers",
+            "title": "LR Post Numbers",
             "category": "feature",
             "icon": {
                 "name": "fas fa-list-ol",
