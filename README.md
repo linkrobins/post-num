@@ -1,5 +1,9 @@
 # Link Robins Post Numbers
 
+> **This extension is retired.** It still works and the existing versions stay installable, but it won't get updates or fixes. Use [Prominent Post Numbers](https://github.com/clarkwinkelmann/flarum-ext-prominent-post-numbers) by Clark Winkelmann instead: it does the same job on Flarum 2 and adds post numbers in mentions, a custom prefix, and a setting to show the number on the right.
+>
+> To switch: `composer remove linkrobins/post-num`, then `composer require clarkwinkelmann/flarum-ext-prominent-post-numbers`, then `php flarum cache:clear`.
+
 Adds a `#1`, `#2`, `#3`... number to each post in a discussion. Helpful for referring to specific posts ("see #4 above") and giving readers a sense of where they are in a long thread.
 
 Ported to Flarum 2.0 from [`ziven/flarum-post-number`](https://github.com/Ziiven/flarum-post-number) (MIT).
